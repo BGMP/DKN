@@ -65,6 +65,7 @@ The code has been tested running under Python 3.7, with the following packages i
 - tensorboard==2.10.1
 - keras==2.10.0
 - tensorflow-estimator==2.10.0
+- matplotlib==3.5.3
 
 ### Running the code
 ```
