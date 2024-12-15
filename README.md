@@ -1,3 +1,12 @@
+# BGM's Fork Notes
+* I have heavily modified the code base to work with Python 3.7, as version 3.6.5 seemed to have problems with
+  annotations.
+* Fixes to transE originated from https://github.com/hwwang55/DKN/pull/29 have been implemented. Credits go to
+ [@sinmentis](https://github.com/hwwang55/DKN/pull/29).
+* Tensorflow has been updated to version 2.10.0.
+* All credit goes to the original authors of the DKN paper and the original repository. This is just a fork to
+  make the code work with newer versions of Python and Tensorflow.
+
 # DKN
 
 This repository is the implementation of [DKN](https://dl.acm.org/citation.cfm?id=3186175) ([arXiv](https://arxiv.org/abs/1801.08284)):
@@ -41,16 +50,25 @@ The multiple channels and alignment of words and entities enable KCNN to combine
 
 
 ### Required packages
-The code has been tested running under Python 3.6.5, with the following packages installed (along with their dependencies):
-- tensorflow-gpu == 1.4.0
-- numpy == 1.14.5
-- sklearn == 0.19.1
-- pandas == 0.23.0
-- gensim == 3.5.0
-
+The code has been tested running under Python 3.7, with the following packages installed (along with their dependencies):
+- tensorflow==2.10.0
+- numpy==1.20
+- pandas==1.1.5
+- scikit-learn==0.24.2
+- gensim==4.1.2
+- urllib3==1.26.6
+- requests==2.27.1
+- protobuf==3.19.6
+- typing-extensions==4.1.1
+- h5py==3.1.0
+- wrapt==1.14.1
+- tensorboard==2.10.1
+- keras==2.10.0
+- tensorflow-estimator==2.10.0
 
 ### Running the code
 ```
+$ pip install -r requirements.txt
 $ cd data/news
 $ python news_preprocess.py
 $ cd ../kg
