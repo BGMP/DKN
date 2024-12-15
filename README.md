@@ -2,7 +2,7 @@
 * I have heavily modified the code base to work with Python 3.7, as version 3.6.5 seemed to have problems with
   annotations.
 * Fixes to transE originated from https://github.com/hwwang55/DKN/pull/29 have been implemented. Credits go to
- [@sinmentis](https://github.com/hwwang55/DKN/pull/29).
+ [@sinmentis](https://github.com/sinmentis).
 * Tensorflow has been updated to version 2.10.0.
 * All credit goes to the original authors of the DKN paper and the original repository. This is just a fork to
   make the code work with newer versions of Python and Tensorflow.
